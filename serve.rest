@@ -1,0 +1,81 @@
+POST https://ec2-54-237-118-91.compute-1.amazonaws.com:4000/login
+Content-Type: application/json
+
+{
+    "username":"ak"
+}
+
+###
+GET https://ec2-54-237-118-91.compute-1.amazonaws.com:3000/posts
+
+
+
+###
+
+POST https://grovifyec2.nidhiworks.com:3005/login
+Content-Type: application/json
+
+{
+    "email":"sr@gmail.com",
+    "password":"1234567890",
+    "username":"sr"
+}
+
+
+###
+GET https://ec2-54-237-118-91.compute-1.amazonaws.com:3005/getAllPlaylistAndSongs
+
+
+###
+POST https://ec2-54-237-118-91.compute-1.amazonaws.com:3005/insertPlaylist
+Content-Type: application/json
+
+{
+    "email":"srinidhisasidharan@gmail.com",
+    "playlist":"Selena",
+    "songs":[]
+}
+
+###
+POST https://ec2-54-237-118-91.compute-1.amazonaws.com:3005/insertPlaylist
+Content-Type: application/json
+
+{
+    "email":"srinidhisasidharan@gmail.com",
+    "playlist":"BTS",
+    "songs":[
+    {
+        "title":"life goes on",
+        "folder":"BTS",
+        "duration":4,
+        "artist":"BTS",
+        "file":"life goes on.mp3"
+    }]
+}
+
+###
+POST  https://ec2-54-237-118-91.compute-1.amazonaws.com:3005/deleteFromPlaylist
+Content-Type: application/json
+
+{
+    "email":"srinidhisasidharan@gmail.com",
+    "playlist":"Taylor",
+    "title":"life goes on"
+}
+
+###
+DELETE   https://ec2-54-237-118-91.compute-1.amazonaws.com:3005/deletePlaylist
+Content-Type: application/json
+
+{
+    "email":"srinidhisasidharan@gmail.com",
+    "playlist":"Taylor"
+}
+
+###
+POST https://ec2-54-237-118-91.compute-1.amazonaws.com:3005/userPlaylist
+Content-Type: application/json
+
+{
+    "folder":"BTS"
+}
